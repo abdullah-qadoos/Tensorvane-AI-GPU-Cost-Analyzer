@@ -19,3 +19,9 @@ test-results/*.log
 
 # test dataset (not published)
 nv-a-test-data.zip
+
+# data files, docs and test output (not published)
+*.pdf
+*.csv
+*.xlsx
+test-results/

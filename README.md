@@ -11,7 +11,7 @@ python -m pip install -r requirements.txt
 python app.py
 ```
 
-Open [the workspace](http://127.0.0.1:5000). Start with **Choose CSV** or **Try demo**. After an upload, select **Run analysis**. The backend detects and validates columns on upload. Daily gap checks are selected automatically for consistently daily data that includes weekends. You can change that setting when another calendar is expected. CSV files should be UTF-8 and fit the 8 MB, 100-column, and 100,000-row upload limits.
+Open [the workspace](http://127.0.0.1:5000). Start with **Choose CSV** or **Try demo**. The demo dataset (`demo.csv`) is not included in this repository; **Try demo** works once you place your own `demo.csv` in this folder. After an upload, select **Run analysis**. The backend detects and validates columns on upload. Daily gap checks are selected automatically for consistently daily data that includes weekends. You can change that setting when another calendar is expected. CSV files should be UTF-8 and fit the 8 MB, 100-column, and 100,000-row upload limits.
 
 The parser handles comma, semicolon, tab, and pipe separators; currency symbols and grouping separators; European decimal commas; ISO dates; and slash dates with evidence for day/month order. Ambiguous slash dates remain invalid. Usage is nonnegative, and utilization uses a 0–100 scale.
 
@@ -65,5 +65,3 @@ python tests/browser_workflow.py
 Run the browser checks with **Local analysis** selected. They cover demo analysis, CSV upload, invalid-file and network-error recovery, chat, chart metrics, account search, all navigation views, model settings, keyboard dialog dismissal, and responsive layouts at five viewport widths. Screenshots and the browser check report are saved in `test-results/`. Run all Python regression tests with `python -m unittest discover -v`.
 
 The evaluation writes detailed results to `test-results/`. Live inference accuracy requires configured provider credentials. Regression tests exercise provider mapping and consent with mocked model responses.
-
-The architecture PDF in this folder describes the original design. The column-mapping privacy rules above supersede its raw-sample fallback.
