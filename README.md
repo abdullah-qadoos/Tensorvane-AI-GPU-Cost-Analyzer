@@ -47,7 +47,7 @@ Missing and invalid measurements are counted by column and by data row. The engi
 
 Repeated input and machine-duration columns that are constant within entity/date groups are recorded at that aggregation grain. Their totals count each measurement once. Splitting those batch measurements across incompatible product rows is rejected.
 
-Run the regression suite and archive evaluation with:
+Run the regression suite and archive evaluation with the following commands. The test-data archive (`nv-a-test-data.zip`) is not included in this repository. Without it, the archive tests are skipped and `evaluate_test_data.py` cannot run.
 
 ```powershell
 python -m unittest test_column_mapping test_data_pipeline

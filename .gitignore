@@ -16,3 +16,6 @@ credentials*.json
 # logs and local run output
 *.log
 test-results/*.log
+
+# test dataset (not published)
+nv-a-test-data.zip
