@@ -1,0 +1,18 @@
+{
+  "passed": 12,
+  "checks": [
+    "Brand, title, logo, initial state",
+    "Demo, automatic analysis, metrics, chart, summary",
+    "All five navigation views",
+    "Local chat question and computed answer",
+    "Settings dialog and provider-specific controls",
+    "Rejected upload preserves dataset and restores controls",
+    "CSV upload, report reset, explicit analysis, error recovery",
+    "No page overflow at five mobile, tablet, and desktop widths",
+    "Direct navigation and keyboard dialog dismissal",
+    "All rows excluded: clear explanation and no misleading chart",
+    "Network failure restores controls and subsequent upload succeeds",
+    "No uncaught browser JavaScript errors"
+  ],
+  "browser_errors": []
+}
